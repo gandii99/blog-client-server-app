@@ -1,0 +1,16 @@
+<form action="post" autocomplete="off"  method="POST">
+  <div class="form-group">
+    <label for="exampleInputTitle">Post title</label>
+    <input [(ngModel)]="post.title" name="title" type="text" class="form-control" id="exampleInputTitle" aria-describedby="titleHelp" placeholder="Enter title">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputDescription">Description</label>
+    <input [(ngModel)]="post.text" name="text" type="text" class="form-control" id="exampleInputDescription" placeholder="Description">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputImage">Image url</label>
+    <input [(ngModel)]="post.image" name="image" type="url" class="form-control" id="exampleInputImage" placeholder="url...">
+  </div>
+  <button (click)="addPost()" title="Add new post" type="submit" class="btn btn-primary">Dodaj</button>
+</form>
+
